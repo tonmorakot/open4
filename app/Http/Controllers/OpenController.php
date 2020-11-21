@@ -40,8 +40,10 @@ class OpenController extends Controller
             $printer -> cut();
             
             $printer -> close();
+
+            return response()->json(['message' => 'ok']);
         } catch (\Exception $e) {
-            echo "Couldn't print to this printer: " . $e -> getMessage() . "\n";
+            return response()->json(['message' =>  "".$e -> getMessage().""]);
         }
     }
 }
