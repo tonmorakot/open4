@@ -22,7 +22,7 @@ class OpenController extends Controller
     {
         try {
 
-            $connector = new WindowsPrintConnector("open2");
+            $connector = new WindowsPrintConnector("opentpn");
             
             $printer = new Printer($connector);
             $printer -> text("Hello World!\n");
