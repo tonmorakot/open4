@@ -42,7 +42,7 @@ class OpenController extends Controller
             $printer -> cut();
             */
             
-            $printer -> pluse();
+            $printer -> pulse();
             
             $printer -> close();
 
