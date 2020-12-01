@@ -25,6 +25,8 @@ class OpenController extends Controller
             $connector = new WindowsPrintConnector("opentpn");
             
             $printer = new Printer($connector);
+            
+            /*
             $printer -> text("Hello World!\n");
             $printer -> text("Hello World!\n");
             $printer -> text("Hello World!\n");
@@ -38,6 +40,9 @@ class OpenController extends Controller
             $printer -> text("Hello World!\n");
             $printer -> text("Hello World!\n");
             $printer -> cut();
+            */
+            
+            $printer -> pluse();
             
             $printer -> close();
 
